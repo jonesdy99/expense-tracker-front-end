@@ -5,17 +5,20 @@ export default function Form() {
     <div className='max-w-sm mx-auto w-96 flex-wrap'>
       <h1 className='font-bold pb-4 text-xl'>Transactions</h1>
       <form id='form'>
-        <div className='flex gap-4 mb-8'>
+        <div className='grid gap-4 mb-8'>
           <div className=''>
-            <input type="text" placeholder='Salary...' className='ml-6 bg-gray-800 rounded text-white' />
+            <input type="text" placeholder='Salary...' className=' bg-gray-800 rounded text-white' />
           </div>
-          <select>
+          <select className='drop-shadow-xl'>
           <option value="Investment" defaultValue>Investment</option>
           <option value="Investment">Expense</option>
           <option value="Investment">Liquid Cash</option>
           </select>
           <div>
             <input type="text" placeholder='Amount' className='bg-gray-800 rounded text-white' />
+          </div>
+          <div className="submit-btn">
+            <button className='grid border py-2 text-white bg-indigo-500 w-full'>Submit</button>
           </div>
         </div>
       </form>
