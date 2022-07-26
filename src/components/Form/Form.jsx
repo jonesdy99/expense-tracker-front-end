@@ -7,15 +7,15 @@ export default function Form() {
       <form id='form'>
         <div className='grid gap-4 mb-8'>
           <div className=''>
-            <input type="text" placeholder='Salary...' className=' bg-gray-800 rounded text-white' />
+            <input type="text" placeholder='Transaction type ex.(Rent, salary, investment)' className=' bg-gray-800 rounded text-white w-full px-1 focus: outline-none' />
           </div>
-          <select className='drop-shadow-xl'>
+          <select className='drop-shadow-xl w-full focus:outline-none'>
           <option value="Investment" defaultValue>Investment</option>
           <option value="Investment">Expense</option>
-          <option value="Investment">Liquid Cash</option>
+          <option value="Investment">Savings</option>
           </select>
           <div>
-            <input type="text" placeholder='Amount' className='bg-gray-800 rounded text-white' />
+            <input type="text" placeholder='Amount...' className='bg-gray-800 rounded text-white w-full px-1 focus: outline-none' />
           </div>
           <div className="submit-btn">
             <button className='grid border py-2 text-white bg-indigo-500 w-full'>Submit</button>
