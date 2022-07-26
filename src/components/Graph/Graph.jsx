@@ -22,7 +22,7 @@ const userData = {
   },
   options: {
     cutout: 205,
-    radius: 225
+    radius: 225,
   }
 }
 
